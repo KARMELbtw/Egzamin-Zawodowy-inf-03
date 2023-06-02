@@ -2,21 +2,111 @@
     font-family: mainFont;
     src: url(BebasNeue-Regular.ttf);
   }
+
 * {
     font-family: mainFont;
 }
+
+body {
+    background-color: rgb(71, 71, 71);
+}
+
 mainContainer {
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
+
+/*top of the site*/
+
 h1 {
     display: inline-block;
     text-align: center;
-    font-size: 90px;
-    margin-top: -1vh;
-    margin-left: 1vh;
+    font-size: 4.8vw;
+    margin-top: -1.5vh;
     background-image: url(textBackground.gif);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.top {
+    display:inline-flex;
+    height: 115px;
+}
+
+.squares {
+    display:inline-flex;
+    justify-content: end;
+    margin-top: 7px;
+}
+
+.sqr1 {
+    margin-left: 90px;
+}
+
+.sqr1, .sqr2, .sqr3, .sqr4, .sqr5 {
+    background-color: rgb(0, 0, 0);
+    width: 67px;
+    height: 67px;
+    margin-right: 90px;
+    margin-top: 5px;
+    transform: skew(-20deg);
+}
+
+.vertical {
+    background: linear-gradient(49deg, rgba(255, 197, 38) 27%, rgb(255,237,51,1) 100%);
+    width: 7px;
+    height: 75px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.horizontals {
+    justify-content: left;
+}
+
+.line1, .line2, .line3, .line4 , .line5 {
+    display: inline-flex;
+}
+
+.line1 {
+    height: 7px;
+    width: 1000px;
+    background: linear-gradient(49deg, rgba(0,239,255,1) 90%, rgb(38, 255, 154) 100%);
+    border-radius: 5px;
+    border-style: none;
+    margin-right: 25px;
+}
+
+.line2 {
+    height: 7px;
+    width: 40px;
+    background: rgb(38, 255, 154);
+    border-radius: 5px;
+    border-style: none;
+    margin-right: 15px;
+}
+
+.line3 {
+    height: 7px;
+    width: 100px;
+    background: linear-gradient(49deg, rgb(38, 255, 128) 54%, rgba(255,237,51,1) 100%);
+    border-radius: 5px;
+    border-style: none;
+    margin-right: 45px;
+}
+
+.line4 {
+    height: 7px;
+    width: 400px;
+    background: linear-gradient(49deg, rgba(255,237,51,1) 87%, rgb(255, 197, 38) 100%);
+    border-radius: 5px;
+    border-style: none;
+    margin-right: 50px;
+}
+
+.line5 {
+    height: 7px;
+    width: 60px;
+    background: rgba(255,200,51,1);
+    border-radius: 5px;
+    border-style: none;
 }
