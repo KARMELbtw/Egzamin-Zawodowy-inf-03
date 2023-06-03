@@ -4,7 +4,7 @@
     <title>MOD DATABASE</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <style id="style"></style>
 </head>
 <body>
     <div class="mainContainer">
@@ -14,22 +14,25 @@
             </div>
             <div class="squares">
                 <div class="sqr1">
-                    <p>BROWN</p>
+                    <p>MODS</p>
                 </div>
                 <div class="sqr2">
-                    <p>SILVER</p>
+                    <p>ARCANES</p>
                 </div>
                 <div class="sqr3">
-                    <p>GOLD</p>
+                    <p>ADD</p>
                 </div>
                 <div class="sqr4">
-                    <p>SPECIAL</p>
+                    <p>BUILD</p>
                 </div>
-                <div class="sqr5">
-                    <p>RIVEN</p>
+                <div class="sqr5" onclick="login()">
+                    <p>LOGIN</p>
                 </div>
             </div>
             <hr class="vertical">
+            <div class="accInfo">
+
+            </div>
         </div>
         <div class="horizantals">
             <hr class="line1">
@@ -37,8 +40,12 @@
             <hr class="line3">
             <hr class="line4">
             <hr class="line5">
+            <hr class="line6">
         </div>
-        <div class="root"></div>
+        <div id="root">
+
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
