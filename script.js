@@ -4,9 +4,11 @@ var pfpbox = document.getElementById("pfpbox");
 var pfp = document.getElementById("pfp");
 var squares = document.getElementById("squares");
 
+var delayInMilliseconds = 3000;
+
 function empty() {
     root.innerHTML = `
-
+        <article>MOD DATABASE ver. 1.05</article>
     `;
 }
 
@@ -14,8 +16,8 @@ function login() {
     root.innerHTML = `
         <div class="login">
         <form>
-            <input type="text" placeholder="LOGIN" required><br>
-            <input type="password" placeholder="PASSWORD" required><br>
+            <input type="text" placeholder="LOGIN" required class="login1"><br>
+            <input type="password" placeholder="PASSWORD" required class="password1"><br>
             <button class="submit" onclick="submit1()">SUBMIT</button>
         </form>
     </div>
@@ -96,11 +98,12 @@ function login() {
         100%{color: #ffffff;}
     }
     `;
+
 }
 
 function logout() {
 
-    root.innerHTML =   `
+    root.innerHTML = `
     
     `;
 
@@ -129,12 +132,12 @@ function logout() {
 }
 
 function submit1() {
+
     root.innerHTML = `
     <h2>LOGGING IN</h2>
     <div class="circle">
     </div>
     `;
-
 
     pfpbox.innerHTML = `
         <img src="pfp.png" class="pfp">
@@ -190,4 +193,8 @@ function submit1() {
         height: 83px;
     } 
     `;
+
+    setTimeout(function(){
+        empty();
+    }, 3000);
 }
