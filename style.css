@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(36, 36, 36);
 }
 
 mainContainer {
@@ -60,7 +60,7 @@ h1 {
     justify-content: center;
 }
 
-p {
+.paragraf {
     background: linear-gradient(49deg, rgb(0, 255, 234) 27%, rgb(0, 255, 157) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -167,7 +167,8 @@ p {
     height: 83px;
     margin-top: 5px;
     margin-left: 18px;
-    background-color: aliceblue;
+    border-radius: 3px;
+    background-color: rgb(20, 13, 13);
 }
 
 .horizontals {
@@ -236,12 +237,14 @@ p {
     border-style: none;
 }
 
+.accPfp {
+    color: #fffb00;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 22px;
+}
 /* middle of the site */
 
-/* login form */
 
-
-
-/*  */
 
 /* bottom of the site */

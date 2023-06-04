@@ -1,5 +1,14 @@
 var root = document.getElementById("root");
 var style = document.getElementById("style");
+var pfpbox = document.getElementById("pfpbox");
+var pfp = document.getElementById("pfp");
+var squares = document.getElementById("squares");
+
+function empty() {
+    root.innerHTML = `
+
+    `;
+}
 
 function login() {
     root.innerHTML = `
@@ -12,7 +21,7 @@ function login() {
     </div>
     `;
 
-    style.innerHTML = `
+    style.innerHTML += `
     .login {
         position: absolute;
         top: 50%;
@@ -52,6 +61,7 @@ function login() {
         background-color: rgb(20, 13, 13);
         border: none;
         border-radius: 3px;
+        margin-top: 15px;
         font-size: 30px;
         font-style: italic;
         color: #ffffff;
@@ -88,6 +98,36 @@ function login() {
     `;
 }
 
+function logout() {
+
+    root.innerHTML =   `
+    
+    `;
+
+    squares.innerHTML = `
+    <div class="sqr1">
+        <p class="paragraf">MODS</p>
+    </div>
+    <div class="sqr2">
+        <p class="paragraf">ARCANES</p>
+    </div>
+    <div class="sqr3">
+        <p class="paragraf">ADD</p>
+    </div>
+    <div class="sqr4">
+        <p class="paragraf">BUILD</p>
+    </div>
+    <div class="sqr5" onclick="login()">
+        <p class="paragraf">LOGIN</p>
+    </div>
+    `;
+
+    pfpbox.innerHTML = `
+        <p class="accPfp" id="pfp">?</p>
+    `;
+
+}
+
 function submit1() {
     root.innerHTML = `
     <h2>LOGGING IN</h2>
@@ -95,7 +135,30 @@ function submit1() {
     </div>
     `;
 
-    style.innerHTML = `
+
+    pfpbox.innerHTML = `
+        <img src="pfp.png" class="pfp">
+    `;
+
+    squares.innerHTML = `
+    <div class="sqr1">
+        <p class="paragraf">MODS</p>
+    </div>
+    <div class="sqr2">
+        <p class="paragraf">ARCANES</p>
+    </div>
+    <div class="sqr3">
+        <p class="paragraf">ADD</p>
+    </div>
+    <div class="sqr4">
+        <p class="paragraf">BUILD</p>
+    </div>
+    <div class="sqr5" onclick="logout()">
+        <p class="paragraf">LOGOUT</p>
+    </div>
+    `;
+
+    style.innerHTML += `
     h2 {
         position: absolute;
         top: 30%;
@@ -121,5 +184,10 @@ function submit1() {
         0%{transform: rotate(0deg);}
         100%{transform: rotate(360deg);}
     }
+
+    .pfp {
+        width: 83px;
+        height: 83px;
+    } 
     `;
 }
