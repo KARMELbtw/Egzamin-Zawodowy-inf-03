@@ -9,6 +9,7 @@
 
 body {
     background-color: rgb(36, 36, 36);
+    margin: 0px;
 }
 
 mainContainer {
@@ -21,7 +22,8 @@ h1 {
     display: inline-block;
     text-align: center;
     font-size: 4.8vw;
-    margin-top: -1.5vh;
+    margin-top: -0.6vh;
+    margin-left: 0.6vh;
     background-image: url(textBackground.gif);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -29,7 +31,9 @@ h1 {
 
 .top {
     display: inline-flex;
-    height: 115px;
+    height: 105px;
+    width: 1920px;
+    background-color: rgb(24, 24, 24);
 }
 
 .squares {
@@ -38,126 +42,89 @@ h1 {
     margin-top: 7px;
 }
 
-.sqr1 {
-    margin-left: 90px;
-    animation-name: sqranim1b;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-}
-
 .sqr1,
 .sqr2,
 .sqr3,
 .sqr4,
 .sqr5 {
     background-color: rgb(20, 13, 13);
-    width: 67px;
-    height: 67px;
-    margin-right: 90px;
-    margin-top: 5px;
-    border-radius: 5px;
-    transform: skew(-20deg);
-    justify-content: center;
+    height: 83px;
+    width: 160px;
+    border-radius: 3px;
+    border: 1px solid;
+    margin-left: 10px;
 }
-
-.paragraf {
-    background: linear-gradient(49deg, rgb(0, 255, 234) 27%, rgb(0, 255, 157) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 20px;
-    text-align: center;
-    text-shadow: 0px 0px 4px #ffffff;
-    margin-top: 22px;
-}
-
-/* square animations */
 
 .sqr1 {
-    animation-name: sqranim1b;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+    border-color: aqua;
 }
 
 .sqr2 {
-    animation-name: sqranim1b;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+    border-color:  rgb(0, 255, 200);
 }
 
 .sqr3 {
-    animation-name: sqranim1b;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+    border-color: rgb(255, 242, 61);
 }
 
 .sqr4 {
-    animation-name: sqranim1b;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+    border-color: rgb(255, 238, 0);
 }
 
 .sqr5 {
-    animation-name: sqranim1b;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+    border-color: rgb(255, 197, 38);
 }
 
 .sqr1:hover {
-    animation-name: sqranim1a;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    border: none;
+    margin-left: 12px;
+    background: linear-gradient(90deg, rgb(0, 255, 213) 54%, rgb(99, 255, 51) 100%);  
 }
 
 .sqr2:hover {
-    animation-name: sqranim1a;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    border: none;
+    margin-left: 12px;
+    background: linear-gradient(90deg, rgb(38, 255, 128) 54%, rgba(255, 237, 51, 1) 100%);
 }
 
 .sqr3:hover {
-    animation-name: sqranim1a;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    border: none;
+    margin-left: 12px;
+    background: rgb(241, 255, 51);
 }
 
 .sqr4:hover {
-    animation-name: sqranim1a;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    border: none;
+    margin-left: 12px;
+    background: linear-gradient(90deg, rgb(241, 255, 51) 50%, rgb(255, 237, 51) 100%);
 }
 
 .sqr5:hover {
-    animation-name: sqranim1a;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    border: none;
+    margin-left: 12px;
+    background: rgba(255, 200, 51, 1);
+}   
+
+.paragraf {
+    color: whitesmoke;
+    height: 58px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 25px;
 }
 
-@keyframes sqranim1a {
-    0% {
-        background-color: rgb(20, 13, 13);
-    }
-
-    100% {
-        background-color: rgba(20, 13, 13, 0)
-    }
+.paragraf:hover {
+    color: rgb(27, 27, 27);
 }
-
-@keyframes sqranim1b {
-    0% {
-        background-color: rgba(20, 13, 13, 0)
-    }
-
-    100% {
-        background-color: rgb(20, 13, 13);
-    }
-}
-
-/* */
 
 .vertical {
     background: linear-gradient(49deg, rgba(255, 197, 38) 27%, rgb(255, 237, 51, 1) 100%);
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: 0px;
     width: 7px;
-    height: 75px;
+    height: 83px;
     border-radius: 5px;
     border-style: none;
 }
@@ -165,9 +132,10 @@ h1 {
 .accInfo {
     width: 83px;
     height: 83px;
-    margin-top: 5px;
+    margin-top: 7px;
     margin-left: 18px;
     border-radius: 3px;
+    border: 1px solid rgb(255, 197, 38);
     background-color: rgb(20, 13, 13);
 }
 
@@ -182,6 +150,7 @@ h1 {
 .line5,
 .line6 {
     display: inline-flex;
+    margin-top: 0px;
 }
 
 .line1 {
