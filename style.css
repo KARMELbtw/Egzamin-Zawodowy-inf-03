@@ -12,6 +12,10 @@ body {
     margin: 0px;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+  }
+
 mainContainer {
     display: flex;
 }
@@ -257,3 +261,15 @@ h1 {
 }
 
 /* bottom of the site */
+
+.footerMain {
+    width: 100vw;
+    height: 30vh;
+    background-color: rgb(24 24 24);
+}
+
+.footerLine {
+    height: 0.5vh;
+    background: linear-gradient(49deg, rgba(0, 239, 255, 1) 90%, rgb(38, 255, 154) 100%);
+    border-style: none;
+}
