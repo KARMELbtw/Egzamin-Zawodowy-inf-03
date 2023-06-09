@@ -33,6 +33,13 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
+.h1Footer {
+    width: 100vw;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 4.8vw;
+}
+
 .top {
     display: inline-flex;
     height: 105px;
