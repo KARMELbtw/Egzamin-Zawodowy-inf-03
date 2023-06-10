@@ -226,14 +226,16 @@ h1 {
 }
 /* middle of the site */
 
-.modSearchBox {
+.arcaneSearchBox {
     display: flex;
 }
 
-.modList {
+.arcaneList {
     display: inline-block;
+    align-items: center;
     background-color: rgb(20, 13, 13);
     height: 718px;
+    width: 170px;
     margin: 10px;
     margin-top: 40px;
     margin-left: 25px;
@@ -245,18 +247,15 @@ h1 {
     letter-spacing: 2px;
 }
 
-.modSearch {
-    height: 728px;
-    width: 800px;
-    margin: 10px;
+ul {
     margin-top: 40px;
-    display: inline-flex;
-    background-color: rgb(20, 13, 13);
-    border-radius: 3px;
-    border: 1px solid aqua;
 }
 
-.modSearchResult {
+li {
+    margin-top: 10px;
+}
+
+.arcaneSearchResult {
     height: 728px;
     width: 800px;
     margin: 10px;
