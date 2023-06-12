@@ -46,7 +46,7 @@
         </div>
         <div id="root">
             <!-- <article>MOD DATABASE ver. 1.05</article> -->
-            <div class="arcaneSearchBox">
+            <!-- <div class="arcaneSearchBox">
                 <div class="arcaneList">
                     <h3>ARCANE TYPES</h3>
                     <ul>
@@ -66,11 +66,34 @@
                 <div class="arcaneSearchResult">
 
                 </div>
+            </div> -->
+            <div class="login">
+                <form>
+                    <input type="text" placeholder="NAME" required><br>
+                    <input type="text" placeholder="DESCRIPTION" required><br>
+                    <input list="damage" placeholder="DAMAGE TYPE"><br>
+                    <datalist id="damage">
+                        <option>IMPACT</option>
+                        <option>PUNCTURE</option>
+                        <option>SLASH</option>
+                        <option>COLD</option>
+                        <option>ELECTRICITY</option>
+                        <option>HEAT</option>
+                        <option>TOXIN</option>
+                        <option>BLAST</option>
+                        <option>CORROSIVE</option>
+                        <option>GAS</option>
+                        <option>MAGNETIC</option>
+                        <option>RADIATON</option>
+                        <option>VIRAL</option>
+                        <option>VOID</option>
+                    </datalist>
+                    <input type="number" placeholder="RANK" max="5" min="1">
+                    <input type="checkbox" placeholder="MAX RANK" required><br>
+                    <input type="text" placeholder="IMAGE LINK" required><br>
+                    <input type="submit">
+                    <input type="reset">
             </div>
-        </div>
-        <div class="footerMain">
-            <hr class="footerLine">
-            <h1 class="h1Footer">// MORE TO COME LATER //</h1>
         </div>
     </div>
     <script src="script.js"></script>
