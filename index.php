@@ -67,8 +67,8 @@
 
                 </div>
             </div> -->
-            <div class="login">
-                <form>
+            <div class="add">
+                <form method="post">
                     <input type="text" placeholder="NAME" required><br>
                     <input type="text" placeholder="DESCRIPTION" required><br>
                     <input list="damage" placeholder="DAMAGE TYPE"><br>
@@ -88,8 +88,8 @@
                         <option>VIRAL</option>
                         <option>VOID</option>
                     </datalist>
-                    <input type="number" placeholder="RANK" max="5" min="1">
-                    <input type="checkbox" placeholder="MAX RANK" required><br>
+                    <input type="number" placeholder="RANK" max="5" min="0">
+                    <input type="checkbox" placeholder="MAX RANK" required><div class="max"> MAX</div><br>
                     <input type="text" placeholder="IMAGE LINK" required><br>
                     <input type="submit">
                     <input type="reset">

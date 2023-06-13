@@ -226,6 +226,10 @@ h1 {
 }
 /* middle of the site */
 
+.max {
+    display: inline;
+}
+
 /* .arcaneSearchBox {
     display: flex;
 }
@@ -266,7 +270,7 @@ li {
     border: 1px solid aqua;
 } */
 
-.login {
+.add {
     position: absolute;
     top: 55%;
     left: 50%;
