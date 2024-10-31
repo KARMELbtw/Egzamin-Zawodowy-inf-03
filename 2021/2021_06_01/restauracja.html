@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restauracja Wszystkie Smaki</title>
+    <link rel="stylesheet" href="styl_1.css">
+</head>
+<body>
+    <header>
+        <h1>Witamy w restauracji "Wszystkie Smaki"</h1>
+    </header>
+    <main>
+        <section id="gorny">
+            <section id="lewy">
+                <img src="menu.jpg" alt="Nasze danie">
+            </section>
+            <section id="prawy">
+                <h4>U nas dobrze zjesz!</h4>
+                <ol>
+                    <li>Obiady od 40zł</li>
+                    <li>Przekąski od 10zł</li>
+                    <li>Kolacje od 20zł</li>
+                </ol>
+            </section>
+        </section>
+        <section id="dolny">
+            <h2>Zarezerwuj stolik on-line</h2>
+            <form action="rezerwacja.php" method="post">
+
+                <label for="data">Data (format rrrr-mm-dd):</label><br>
+                <input type="text" name="data"><br>
+
+                <label for="ileOsob">Ile osób?:</label><br>
+                <input type="number" name="ileOsob"><br>
+
+                <label for="telefon">Twój numer telefonu:</label><br>
+                <input type="text" name="telefon"><br>
+                
+                <input type="checkbox" name="daneOsobowe">
+                <label for="daneOsobowe">Zgadzam się na przetwarzanie moich danych osobowych</label><br>
+
+                <input type="reset" value="WYCZYŚĆ" id="wyczysc">
+                <input type="submit" value="REZERWUJ" id="rezerwuj">
+            </form>
+        </section>
+    </main>
+    <footer>
+        Stronę interetową opracował: <i>KARMELbtw<i>
+    </footer>
+</body>
+</html>
