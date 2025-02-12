@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firma IT</title>    
+    <link rel="stylesheet" href="styl.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="logo">
+                <img src="logo.png" alt="Firma IT">
+            </div>
+            <div id="menu">
+                <a href="index.html">Strona Główna</a>
+                <a href="uslugi.html">Usługi</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+            
+        </header>
+        <div id="baner">
+                <img src="animacja.gif" alt="Usługi informatyczne">
+        </div>
+        <main>
+            <form name="contactForm">
+            <table>
+                <tr>
+                    <td>Imię</td>
+                    <td><input type="text" name="imie"></td>
+                </tr>
+                <tr>
+                    <td>Nazwisko</td>
+                    <td><input type="text" name="nazwisko"></td>
+                </tr>
+                <tr>
+                    <td>E-mail</td>
+                    <td><input type="email" name="email"></td> 
+                </tr>
+                <tr>
+                    <td>Zgłoszenie</td>
+                    <td><textarea rows="10" cols="40" name="zgloszenie"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="zgoda">Zapoznałam/em się z regulaminem</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="reset">Resetuj</button><button type="button" onclick="send()">Prześlij</button></td>
+                </tr>
+            </table>
+        </form>
+        <hr>
+        <p id="result"></p>
+        </main>
+        <footer>Autor strony: <b>1234567890</b></footer>
+    </div>
+    <script>
+        function send() {
+            let formObject = document.forms.contactForm;    
+            let resultObject = document.getElementById('result');
+            if (formObject.zgoda.checked) {
+                resultObject.style.color = "navy";
+                resultObject.innerHTML = formObject.imie.value.toUpperCase() + " " + formObject.nazwisko.value.toUpperCase() + "<br> Treść Twojej sprawy: " + formObject.zgloszenie.value.toUpperCase();
+            } else {
+                resultObject.style.color = "red";
+                resultObject.innerText = "Musisz zapoznać się z regulaminem";
+            }
+        }
+    </script>
+</body>
+</html>
