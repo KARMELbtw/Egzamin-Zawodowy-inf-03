@@ -24,7 +24,7 @@
                 <img src="animacja.gif" alt="Usługi informatyczne">
         </div>
         <main>
-            <form>
+            <form name="contactForm">
             <table>
                 <tr>
                     <td>Imię</td>
@@ -48,17 +48,26 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td><button type="reset">Resetuj</button><button onclick="send()">Prześlij</button></td>
+                    <td><button type="reset">Resetuj</button><button type="button" onclick="send()">Prześlij</button></td>
                 </tr>
             </table>
         </form>
         <hr>
+        <p id="result"></p>
         </main>
         <footer>Autor strony: <b>1234567890</b></footer>
     </div>
     <script>
         function send() {
-            
+            let formObject = document.forms.contactForm;    
+            let resultObject = document.getElementById('result');
+            if (formObject.zgoda.checked) {
+                resultObject.style.color = "navy";
+                resultObject.innerHTML = formObject.imie.value.toUpperCase() + " " + formObject.nazwisko.value.toUpperCase() + "<br> Treść Twojej sprawy: " + formObject.zgloszenie.value.toUpperCase();
+            } else {
+                resultObject.style.color = "red";
+                resultObject.innerText = "Musisz zapoznać się z regulaminem";
+            }
         }
     </script>
 </body>
