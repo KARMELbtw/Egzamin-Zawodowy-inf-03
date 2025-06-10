@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div id="chat">
+            <div class="wypowiedz jolanta">
+                <img src="Jolka.jpg">
+                <p>Cześć idziesz jutro do kina?</p>
+            </div>
+            <div class="wypowiedz krzysztof">
+                <img src="Krzysiek.jpg">
+                <p>Tak! A ty?</p>
+            </div>
+            
+        </div>
+        <label for="text">Wpisz wiadomość</label>
+        <input type="text" name="text" id="text">
+        <button onclick="send()">Wyslij</button>
+        <button>Generuj losową odpowiedź</button>
+        <script>
+            function send() {
+                let text = document.getElementById('text').value;
+                let chat = document.getElementById("chat");
+                chat.innerHTML += `
+                <div class="wypowiedz krzysztof">
+                <img src="Krzysiek.jpg">
+                <p>`+text+`</p>
+                </div>
+                `;
+            }
+        </script>
+    </main>
+    <div id="boczny">
+        <h3>czaty</h3>
+        <ul>
+            <li>Ogólny</li>
+            <li>
+                Tematyczne
+                <ol>Turystyczny</ol>
+                <ol>Żeglarski</ol>
+                <ol>Filatelistyczny</ol>
+                <ol>Hodowlo zwierzątek domowych</ol>
+            </li>
+        </ul>
+        <h3>Uczestniczy</h3>
+        <p>Jolanta Nowak</p>
+        <img src="Jolka.jpg" alt="Jolanta Nowak">
+        <p>Krzysztof Łukasiński</p>
+        <img src="Krzysiek.jpg" alt="Krzysztof Łukasiński">
+    </div>
+    <footer>
+        <h5>Chat wykonał: 1234567890</h5>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+* {
+    font-family: Garamond;
+}
+
+header {
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    width: 80%;
+    height: 80px;
+}
+
+main {
+    width: 80%;
+    height: 600px;
+}
+
+#boczny {
+    background-color: coral;
+    width: 20%;
+    height: 680px;
+}
+
+footer {
+    background-color: tomato;
+    color: white;
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#chat {
+    border: 1px solid tomato;
+    margin: 15px;
+    height: 470px;
+    overflow: scroll;   
+}
+
+.wypowiedz {
+    border-radius: 5px;
+    width: 90%;
+    height: 70px;
+    padding: 2%;
+    margin: 3px;
+    display: flex;
+}
+
+.jolanta {
+    background-color: #EEE;
+}
+
+.krzysztof {
+    background-color: #CCC;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+button {
+    background-color: tomato;
+    border: 1px solid darkred;
+    padding: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 500px;
+}
