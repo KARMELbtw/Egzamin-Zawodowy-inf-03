@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="styl.css">
 </head>
 <body>
-    <header>
-
-    </header>
     <main>
+    <header>
+        <h2>Chat</h2>
+    </header>
         <div id="chat">
             <div class="wypowiedz jolanta">
                 <img src="Jolka.jpg">
@@ -25,17 +25,39 @@
         <label for="text">Wpisz wiadomość</label>
         <input type="text" name="text" id="text">
         <button onclick="send()">Wyslij</button>
-        <button>Generuj losową odpowiedź</button>
+        <button onclick="generate()">Generuj losową odpowiedź</button>
         <script>
+            let chat = document.getElementById("chat");
+
             function send() {
                 let text = document.getElementById('text').value;
-                let chat = document.getElementById("chat");
+                chat.innerHTML += `
+                <div class="wypowiedz jolanta">
+                <img src="Jolka.jpg">
+                <p>`+text+`</p>
+                </div>
+                `;
+                chat.scrollTo(0, 9999999999999);
+            }
+
+            function generate() {
+                let tab = Array("Świetnie!",
+"Kto gra główną rolę?",
+"Lubisz filmy Tego reżysera?",
+"Będę 10 minut wcześniej",
+"Może kupimy sobie popcorn?",
+"Ja wolę Colę",
+"Zaproszę jeszcze Grześka",
+"Tydzień temu też byłem w kinie na Diunie",
+"Ja funduję bilety");
+                let text = tab[Math.floor(Math.random()*9)];
                 chat.innerHTML += `
                 <div class="wypowiedz krzysztof">
                 <img src="Krzysiek.jpg">
                 <p>`+text+`</p>
                 </div>
                 `;
+                chat.scrollTo(0, 9999999999999);
             }
         </script>
     </main>
